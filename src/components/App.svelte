@@ -43,7 +43,7 @@
 	</p>
 	<p>You can click at any sections or lines hide some information before printing.</p>
 	<a href={sourceLink} target="_blank" rel="noopener">[Source Original Repository]</a>
-	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
+	<!-- <a href={dataLink} target="_blank" rel="noopener">[Data]</a> -->
 </header>
 
 <main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
