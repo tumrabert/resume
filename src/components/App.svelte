@@ -28,9 +28,9 @@
 </script>
 
 <!-- Remove this is you does not want Kofi widget on your site -->
-{#if intro.github == 'narze'}
+<!-- {#if intro.github == 'narze'}
 	<Kofi name={intro.github} />
-{/if}
+{/if} -->
 
 <header class="web-only text-center p-4 sm:p-6 bg-green-400 text-white w-screen">
 	<h1 class="text-4xl">Resumette</h1>
@@ -104,15 +104,20 @@
 					<Hideable hide={project.hide}>
 						<li>
 							<strong>{project.name}</strong>
-						
-							{#if project.url !== ""} 
-                - <a href="https://{project.url}" target="_blank" rel="noreferrer" style="margin-right: 20px;"><strong>{project.url}</strong></a>
-        {/if} 
-							<br>
-							
+
+							{#if project.url !== ''}
+								- <a
+									href="https://{project.url}"
+									target="_blank"
+									rel="noreferrer"
+									style="margin-right: 20px;"><strong>{project.url}</strong></a
+								>
+							{/if}
+							<br />
+
 							{#each project.details as detail}
-                <li style="margin-left: 20px;">{detail}</li>
-            {/each}
+								<li style="margin-left: 20px;">{detail}</li>
+							{/each}
 						</li>
 					</Hideable>
 				{/each}
