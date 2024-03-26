@@ -104,10 +104,15 @@
 					<Hideable hide={project.hide}>
 						<li>
 							<strong>{project.name}</strong>
-							- {project.details}
-							<a href="https://{project.url}" target="_blank" rel="noreferrer"
-								><strong>{project.url}</strong></a
-							>
+						
+							{#if project.url !== ""} 
+                - <a href="https://{project.url}" target="_blank" rel="noreferrer" style="margin-right: 20px;"><strong>{project.url}</strong></a>
+        {/if} 
+							<br>
+							
+							{#each project.details as detail}
+                <li style="margin-left: 20px;">{detail}</li>
+            {/each}
 						</li>
 					</Hideable>
 				{/each}
@@ -132,10 +137,10 @@
 		</Hideable>
 	</section>
 
-	<footer class="print-only">
+	<!-- <footer class="print-only">
 		(See <a href={fullVersionLink} target="_blank" rel="noopener">full version</a>
 		or <a href={sourceLink} target="_blank" rel="noopener">source</a>)
-	</footer>
+	</footer> -->
 </main>
 
 <style lang="postcss">
