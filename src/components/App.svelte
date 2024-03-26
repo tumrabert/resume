@@ -32,7 +32,7 @@
 	<Kofi name={intro.github} />
 {/if} -->
 
-<header class="web-only text-center p-4 sm:p-6 bg-green-400 text-white w-screen">
+<header class="web-only text-center p-4 sm:p-6 bg-ferrari text-white w-screen">
 	<h1 class="text-4xl">Resumette</h1>
 	<h3>
 		<button on:click={() => window.print()} class="underline text-lg">[Print]</button>
@@ -42,7 +42,7 @@
 		on print.
 	</p>
 	<p>You can click at any sections or lines hide some information before printing.</p>
-	<a href={sourceLink} target="_blank" rel="noopener">[Source]</a>
+	<a href={sourceLink} target="_blank" rel="noopener">[Source Original Repository]</a>
 	<a href={dataLink} target="_blank" rel="noopener">[Data]</a>
 </header>
 

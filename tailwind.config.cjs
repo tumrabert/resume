@@ -18,6 +18,9 @@ const config = {
 			],
 			screens: {
 				print: { raw: 'print' }
+			},
+			colors: {
+				ferrari: '#FF2800'
 			}
 		}
 	},
