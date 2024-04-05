@@ -74,19 +74,19 @@
 	"technologies": [
 		{
 			"section": "Languages:",
-			"details": "Python (proficient), C, C++, SQL, Node.js, TypeScript, React, Java"
+			"details": ["Python (proficient)", "C", "C++", "SQL", "Node.js", "TypeScript", "React", "Java"]
 		},
 		{
 			"section": "Frameworks:",
-			"details": "ReactJS, NextJS, Bootstrap"
+			"details": ["ReactJS", "NextJS", "Bootstrap"]
 		},
 		{
 			"section": "Tools:",
-			"details": "Git, Terraform, Docker, Figma, Jira, Jest Unit Test"
+			"details": ["Git", "Terraform", "Docker", "Figma", "Jira", "Jest Unit Test"]
 		},
 		{
 			"section": "Other:",
-			"details": "AWS, Excel, Strapi"
+			"details": ["AWS", "Excel", "Strapi"]
 		}
 	],
 	"workExperiences": [
@@ -94,7 +94,7 @@
 			"position": "Full Stack Developer Internship",
 			"company": "Ayodia Co.,Ltd",
 			"url": "",
-			"years": ["January", "March 2024"],
+			"years": ["January 2024", "March 2024"],
 			"details": [
 				"Customized Strapi CMS (open-source) for internal TTB Bank use, enhancing content management efficiency.",
 				"Applied Git, Agile methodologies, React, and Node.js to deliver robust web solutions.",
@@ -105,7 +105,7 @@
 			"position": "Software Quality Management Internship",
 			"company": "Kasikorn Business-Technology Group (KBTG)",
 			"url": "",
-			"years": ["May", "August 2023"],
+			"years": ["May 2023", "August 2023"],
 			"details": [
 				"Utilized LoadRunner to assess application speed, scalability, and stability under diverse conditions, ensuring it met performance standards for an optimal user experience.",
 				"Analyzed the working time of employees in each team to measure task allocation efficiency and ensure appropriate task time management."
@@ -115,15 +115,22 @@
 	"educations": [
 		{
 			"head": "B.Eng. Computer Engineering",
-			"details": "Chulalongkorn University, TH. 2020-Present (GPA 3.02)"
+			"details": "Chulalongkorn University, TH.",
+			"years": ["2020","2024"],
+			"GPA": "3.02"
 		}
 	],
 	"interests": [
-		"Areas : Coding, Productivity & Life-hacks, Blockchain, Finance & Investment",
-		"Freetime : Video-Creator, Guitar instrument, Actor",
-		"Reading : Self-Development, History, Biography",
-		"Music : Pop, Rock, ลูกทุ่ง",
-		"Pets : I have a chihuahua dog."
+		{"title":"Areas",
+		"details":["Coding", "Productivity & Life-hacks", "Blockchain","Finance & Investment"]},
+		{"title":"Freetime",
+		"details":["Video-Creator", "Guitar instrument", "Actor"]},
+		{"title":"Reading",
+		"details":["Self-Development", "History", "Biography"]},
+		{"title":"Music",
+		"details":["Pop", "Rock", "ลูกทุ่ง"]},
+		{"title":"Pets",
+		"details":["I have a chihuahua dog."]}
 	],
 	"resumeUrl": {
 		"sourceLink": "https://github.com/narze/resume",

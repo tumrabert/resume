@@ -4,11 +4,15 @@ export interface IProfileResp {
 	technologies: ITechnology[];
 	workExperiences: IWorkExperience[];
 	educations: IEducation[];
-	interests: string[];
+	interests: IInterests[];
 	resumeUrl: {
 		sourceLink: string;
 		fullVersionLink: string;
 	};
+}
+export interface IInterests {
+	title: string;
+	details: string[];
 }
 export interface IIntro {
 	name: string;
@@ -23,14 +27,14 @@ export interface IIntro {
 
 export interface IProject {
 	name: string;
-	details: string;
-	url: string;
+	details: string[];
+	url: string[];
 	hide: boolean;
 }
 
 export interface ITechnology {
 	section: string;
-	details: string;
+	details: string[];
 }
 
 export interface IWorkExperience {
@@ -44,4 +48,6 @@ export interface IWorkExperience {
 export interface IEducation {
 	head: string;
 	details: string;
+	years: string[];
+	GPA: string;
 }

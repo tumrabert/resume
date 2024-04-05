@@ -48,8 +48,8 @@
 
 <main class="text-center p-4 m-0 md:m-8 xl:mx-auto max-w-screen-xl">
 	<Intro {...intro} />
-
-	<section>
+	<!-- Technologies and Languages -->
+	<section> 
 		<Hideable>
 			<h2 class="text-2xl print:text-4xl uppercase text-left">Technologies and Languages</h2>
 			<hr />
@@ -58,14 +58,14 @@
 					<Hideable>
 						<li>
 							<span class="w-28 inline-block">{tech.section}</span>
-							<span>{tech.details}</span>
+							<span>{tech.details.join(', ')}</span>
 						</li>
 					</Hideable>
 				{/each}
 			</ul>
 		</Hideable>
 	</section>
-
+	<!-- Education -->
 	<section>
 		<Hideable>
 			<h2 class="text-2xl print:text-4xl uppercase text-left">Education</h2>
@@ -75,14 +75,18 @@
 				{#each educations as edu}
 					<Hideable>
 						<li>
-							<strong>{edu.head}</strong>, {edu.details}
+							<div class="flex mb-2 font-bold print:mb-1">
+								<div class="flex-1 text-left">{edu.head}</div>
+								<div class="flex-1 text-right">{edu.years.join('-')}</div>
+							</div>
+							{edu.details}, GPA: {edu.GPA}
 						</li>
 					</Hideable>
 				{/each}
 			</ul>
 		</Hideable>
 	</section>
-
+	<!-- Work Experience -->
 	<section>
 		<Hideable>
 			<h2 class="text-2xl print:text-4xl uppercase text-left">Work Experience</h2>
@@ -93,7 +97,7 @@
 			{/each}
 		</Hideable>
 	</section>
-
+	<!-- Projects -->
 	<section>
 		<Hideable>
 			<h2 class="text-2xl print:text-4xl uppercase text-left">Projects</h2>
@@ -124,7 +128,7 @@
 			</ul>
 		</Hideable>
 	</section>
-
+	<!-- Interests -->
 	<section>
 		<Hideable>
 			<h2 class="text-2xl print:text-4xl uppercase text-left">Interests</h2>
@@ -134,7 +138,7 @@
 				{#each interests as interest}
 					<Hideable>
 						<li>
-							{interest}
+							{interest.title}: {interest.details.join(', ')}
 						</li>
 					</Hideable>
 				{/each}
