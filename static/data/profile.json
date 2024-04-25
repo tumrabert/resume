@@ -9,6 +9,7 @@
 		"location": "Bangkok, Thailand",
 		"website": "tumrabert-resume.vercel.app"
 	},
+	"certificates": [{"title":"Google Data Analytics","description":"Completed the Google Data Analytics Professional Certificate, demonstrating proficiency in data preparation, processing, analysis, and visualization using spreadsheets, SQL, Tableau, and R.","url":"https://www.coursera.org/account/accomplishments/specialization/certificate/VS5ACQJ6DV86"}],
 	"projects": [
 		{
 			"name": "Swine fat measurement by using computer vision (Senior Project)",
