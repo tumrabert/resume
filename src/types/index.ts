@@ -2,6 +2,7 @@ export interface IProfileResp {
 	intro: IIntro;
 	projects: IProject[];
 	technologies: ITechnology[];
+	certificates:ICertificate[];
 	workExperiences: IWorkExperience[];
 	educations: IEducation[];
 	interests: IInterests[];
@@ -50,4 +51,9 @@ export interface IEducation {
 	details: string;
 	years: string[];
 	GPA: string;
+}
+export interface ICertificate {
+	title: string;
+	description: string;
+	url: string;
 }
