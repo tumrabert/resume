@@ -12,6 +12,7 @@
 	$: ({
 		intro = {} as IProfileResp['intro'],
 		projects = [],
+		certificates = [],
 		technologies = [],
 		workExperiences = [],
 		educations = [],
@@ -79,7 +80,7 @@
 								<div class="flex-1 text-left">{edu.head}</div>
 								<div class="flex-1 text-right">{edu.years.join('-')}</div>
 							</div>
-							{edu.details}, GPA: {edu.GPA}
+							{edu.details}, GPAX: {edu.GPA}
 						</li>
 					
 				{/each}
@@ -105,7 +106,7 @@
 
 			<ul class="text-left list-disc pl-8">
 				{#each projects as project}
-					<Hideable hide={project.hide}>
+					
 						<li>
 							<strong>{project.name}</strong>
 
@@ -128,6 +129,37 @@
 			</ul>
 		
 	</section>
+	<!-- Certifications -->
+	<section>
+		
+		<h2 class="text-2xl print:text-4xl uppercase text-left">Certificates</h2>
+		<hr />
+
+		<ul class="text-left list-disc pl-8">
+			{#each certificates as certificate}
+				
+					
+						<strong>{certificate.title}</strong>
+
+						{#if certificate.url !== ''}
+							- <a
+								href="{certificate.url}"
+								target="_blank"
+								rel="noreferrer"
+								style="margin-right: 20px;"><strong>{certificate.url}</strong></a
+							>
+						{/if}
+						<br />
+
+						
+							<li style="margin-left: 20px;">{certificate.description}</li>
+						
+					
+				
+			{/each}
+		</ul>
+	
+</section>
 	<!-- Interests -->
 	<section>
 		
