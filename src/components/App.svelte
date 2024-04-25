@@ -178,10 +178,10 @@
 		
 	</section>
 
-	<!-- <footer class="print-only">
-		(See <a href={fullVersionLink} target="_blank" rel="noopener">full version</a>
-		or <a href={sourceLink} target="_blank" rel="noopener">source</a>)
-	</footer> -->
+	<footer class="print-only">
+		(See lasted update version of my resume : <a href={fullVersionLink} target="_blank" >Click Here!</a>)
+
+	</footer>
 </main>
 
 <style lang="postcss">
